@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200;1,500&display=swap');
-
 
 body {
     background-color: coral;
@@ -24,6 +22,8 @@ nav.navbar{
     margin-top: 0px;
     background-color: black;
     width: 100%;
+    z-index: 1;
+    position: fixed;
 }
 .navbar li{
     font-size: 18px;
@@ -40,6 +40,9 @@ nav.navbar{
 /* Seção de apresentação */
 
 #initPage {
+    padding: 150px;
+    align-items: center
+    content: ;
     background-image: url(./img/present/Mimo.png);
     background-size: 250px;
     width: 100%;
@@ -68,6 +71,11 @@ nav.navbar{
     animation-delay: 2.8s;
 }
 
+.box{
+color: black;
+opacity: 70%;
+z-index: 1;
+}
 .initContainer .cta {
     
     display: inline-block;
