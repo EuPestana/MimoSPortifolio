@@ -49,13 +49,13 @@
             </article>
         </div>
     </section>
-    <section id="portfolio">
-        <article class="portfolio container">
+    <main id="portfolio">
+        <section class="portfolio container">
             <div class="portfolio header">
                 <h1 class="section-title"><span>Portifólio</span></h1>
             </div>
-            <div class="all-projects">
-                <div class="projectNewborn">
+            <article class="all-projects">
+                <section class="projectNewborn">
                     <div class="Newborn">
                         <h1>Ensaio Newborn</h1>
                         <h2>Gustavo</h2>
@@ -64,11 +64,11 @@
                             mais difícil é conseguir registrar um sorriso dessas coisinhas fofas. No caso do Gus acho
                             que eu consegui arrancar uns risinhos, ou será que não?</p>
                     </div>
-                    <div class="project-img">
+                    <figure class="project-img">
                         <img src="./img-1.png" alt="img">
-                    </div>
-                </div>
-                <div class="ProjectCouple">
+                    </figure>
+                </section>
+                <section class="ProjectCouple">
                     <div class="Couple">
                         <h1>Ensaio Casal</h1>
                         <h2>Poli e Juli</h2>
@@ -80,11 +80,11 @@
                             ver o quanto elas se amam, e realmente só o amor pra explicar certas coisas.
                         </p>
                     </div>
-                    <div class="project-img">
+                    <figure class="project-img">
                         <img src="./img-1.png" alt="img">
-                    </div>
-                </div>
-                <div class="projectBusiness">
+                    </figure>
+                </section>
+                <section class="projectBusiness">
                     <div class="business">
                         <h1>Ensaio Comercial</h1>
                         <h2>Home Ótica</h2>
@@ -93,11 +93,11 @@
                             mais linda que a outra. <span class="destaque">Bom que minha visão tá em dia, só de
                                 registrar essas fotos.</span></p>
                     </div>
-                    <div class="project-img">
+                    <figure class="project-img">
                         <img src="./img-1.png" alt="img">
-                    </div>
-                </div>
-                <div class="projectPregnant">
+                    </figure>
+                </section>
+                <section class="projectPregnant">
                     <div class="pregnant">
                         <h1>Ensaio Grávida</h1>
                         <h2>Taiana</h2>
@@ -106,13 +106,45 @@
                             parte dessa nova família que se inicia, não tem preço.
                             <span class="destaque">A frase “eles crescem tão rápido” nunca fez tanto sentido.</span></p>
                     </div>
-                    <div class="project-img">
+                    <figure class="project-img">
                         <img src="./img-1.png" alt="img">
-                    </div>
-                </div>
+                    </figure>
+                </section>
+            </article>
+        </section>
+    </main>
+
+    <section class="contact">
+        
+        <article class="socialMedia">
+            <div id="instagram"> <p>Instagram</p>
+                <a href="https://www.instagram.com/mimofotografiaa/"><img src="" alt=""></a>
+                <p>Whatsapp</p>
+                <a href=""><img src="" alt=""></a>
+                
+
             </div>
+
         </article>
+
+        <form action="">
+            <h2>Entre em contato:</h2>
+            <p><label for="nome">Nome </label><input type="text" name="nome" id="inome" placeholder="Insira seu nome" required></p>
+        <p><label for="email">Adicione o email </label><input type="email" id="iemail" size="30" required></p>
+        <p><label for="texto">Mande a sua mensagem: </label> <br><textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite sua mensagem (max. 140 caracteres)" maxlength="140"></textarea> <br>
+        <input type="button" value="Send">
+
+        </form>
+
     </section>
+    <footer class="dev">
+        <address id="dev">
+            <p>Site produzido por <a href="http://github.com/EuPestana">Emerson Pestana</a> <br>
+                contato: <a href="mailto:emersonpestana@live.com">emersonpestana@live.com</a> <br>
+                me ligue <a href="tel:+5571988656783"> +55 71 98865-6783 </a> <br>
+                Salvador, Bahia - Brasil </p>
+        </address>
+    </footer>
 </body>
 
 </html>
