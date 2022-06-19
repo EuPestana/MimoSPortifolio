@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200;1,500&display=swap');
+
+
 body {
     background-color: coral;
 }
@@ -14,7 +17,138 @@ html {
     scroll-behavior: smooth;
 }
 
+
+/*Navbar*/
+
+nav.navbar{
+    margin-top: 0px;
+    background-color: black;
+    width: 100%;
+}
+.navbar li{
+    font-size: 18px;
+    margin-left: 50px;
+    display: inline-block;
+    padding-left: 0;
+    padding-right: 100px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    color: yellow;
+    border: red;
+}
+
+/* Seção de apresentação */
+
+#initPage {
+    background-image: url(./img/present/Mimo.png);
+    background-size: 250px;
+    width: 100%;
+    height: 100%;
+    background-position: top center;
+    box-sizing: content-box;
+}
+    
+#initPage h1{
+    display: block;
+    width: fit-content;
+    font-size: 5rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+}
+#initPage h1:nth-child(1){
+    animation-delay: .8s;
+}
+#initPage h1:nth-child(2){
+    animation-delay: 1.8s;
+}
+#initPage h1:nth-child(3){
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: 2.8s;
+}
+
+.initContainer .cta {
+    
+    display: inline-block;
+    border: 1px;
+    padding: 10px 30px;
+    color: gold;
+    border: 2px solid gold;
+    background-color: transparent;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 20px;
+    transition: .5s ease;
+    transition-property: background-color, color;
+
+}
+#initPage .cta:hover{
+    color: white;
+    font-weight: 500;
+    background-color: gold;
+}
+#initPage h1 span{
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 0%;
+    animation: text_reveal_box 1s ease;
+    animation-delay: .5s;
+    background-color: gold;
+}
+#initPage h1:nth-child(1) span{
+    animation-delay: .5s;
+}
+#initPage h1:nth-child(2) span{
+    animation-delay: 1.5s;
+}
+#initPage h1:nth-child(3) span{
+    animation-delay: 2.5s;
+}
+#initPage::after{
+    content: '';
+    position: absolute;
+    left:0;
+    top: 0;
+    height:100%;
+    width: 100%;
+    color: white;
+    background-color:black;
+    opacity: 0.5;
+    z-index: -1;
+}
+ 
+
 img{
     width: 300px ;
-    object-fit: cover;
+
+}
+
+
+/*Keyframe*/
+
+@keyframes text_reveal{
+    100%{
+        color: white;
+    }
+}
+@keyframes text_reveal_name{
+    100%{
+        color: gold;
+        font-weight: 500px;
+    }
+}
+
+@keyframes text_reveal_box{
+    50%{
+        width:100%;
+        left:0;
+    }
+    100%{
+        width: 0;
+        left:100%
+    }
 }

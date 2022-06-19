@@ -12,28 +12,26 @@
 <body>
 
     <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#initPage">Apresentação</a></li>
-                <li><a href="#present">Quem sou eu?</a></li>
-                <li><a href="#portfolio">Projetos</a></li>
-                <li><a href="#contact">Contatos</a></li>
-            </ul>
-
-        </nav>
-
-    </header>
-
-    <section id="initPage">
-        <div class="InitContainer">
-            <div>
+        <section id="initPage">
+            <div class="initContainer">
                 <h1>Olá,<span></span></h1>
                 <h1>Seja bem vindo à<span></span></h1>
-                <h1>Mimo's Fotografia<span></spa#n></h1>
+                <h1>Mimo Fotografia Afetiva<span></span></h1>
                 <a href="#portifolio" type="button" class="cta">Portifólio</a>
             </div>
-        </div>
-    </section>
+        </section>
+    </header>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="#initPage">Apresentação</a></li>
+            <li><a href="#present">Quem sou eu?</a></li>
+            <li><a href="#portfolio">Projetos</a></li>
+            <li><a href="#contact">Contatos</a></li>
+        </ul>
+
+    </nav>
+
     <section id="present">
         <div class="present container">
             <article class="present content">
@@ -46,6 +44,9 @@
                     clientes, seja um pedido de casamento, ou do chá revelação do bebê até seu primeiro aninho.
                     <span class="destaque">Se tiver uma história eu estarei contando.</span>
                 </p>
+                <figure class="present-img">
+                    <img src="./img/present/present01.png" alt="Fotógrafa Isabela Daltro">
+                </figure>
             </article>
         </div>
     </section>
@@ -119,9 +120,10 @@
         <article class="socialMedia">
             <div id="instagram">
                 <p>Instagram</p>
-                <a href="https://www.instagram.com/mimofotografiaa/" target="_blank"><img src="/img/icons/instagram-logo.svg"
-                        alt="Instagram logo icon"></a>
-                <p>Whatsapp</p> <a href="" target="_blank"><img src="/img/icons/whatsapp-logo.svg" alt="Whatsapp logo icon"></a>
+                <a href="https://www.instagram.com/mimofotografiaa/" target="_blank"><img
+                        src="/img/icons/instagram-logo.svg" alt="Instagram logo icon"></a>
+                <p>Whatsapp</p> <a href="" target="_blank"><img src="/img/icons/whatsapp-logo.svg"
+                        alt="Whatsapp logo icon"></a>
 
 
             </div>
@@ -132,7 +134,8 @@
             <h2>Entre em contato:</h2>
             <p><label for="nome">Nome </label><input type="text" name="nome" id="inome" placeholder="Insira seu nome"
                     required></p>
-            <p><label for="email">Adicione o email </label><input type="email" id="iemail" size="30" placeholder="ex.: fulano@gmail.com" required></p>
+            <p><label for="email">Adicione o email </label><input type="email" id="iemail" size="30"
+                    placeholder="ex.: fulano@gmail.com" required></p>
             <p><label for="texto">Mande a sua mensagem: </label> <br><textarea name="msg" id="imsg" cols="30" rows="10"
                     placeholder="Digite sua mensagem (max. 140 caracteres)" maxlength="140"></textarea> <br>
                 <input type="button" value="Send">
