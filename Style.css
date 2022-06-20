@@ -1,6 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
-    background-color: coral;
+    background-color: #DCCBB5;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 200;
+    letter-spacing: 0.05rem;
 }
 
 * {
@@ -11,47 +24,52 @@ body {
 
 html {
     font-size: 10px;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
 }
 
 
 /*Navbar*/
 
-nav.navbar{
+nav.navbar {
     margin-top: 0px;
-    background-color: black;
+    background-color: #fbd4a0;
     width: 100%;
     z-index: 1;
     position: fixed;
 }
-.navbar li{
+
+.navbar li {
     font-size: 18px;
     margin-left: 50px;
     display: inline-block;
-    padding-left: 0;
-    padding-right: 100px;
-    padding-bottom: 10px;
-    padding-top: 20px;
+    padding: 10px 100px 10px 0;
     color: yellow;
-    border: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* Seção de apresentação */
 
 #initPage {
-    padding: 150px;
-    align-items: center
     content: ;
     background-image: url(./img/present/Mimo.png);
-    background-size: 250px;
-    width: 100%;
-    height: 100%;
-    background-position: top center;
-    box-sizing: content-box;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 20%;
+    background-size: 450px;
 }
-    
-#initPage h1{
+
+.initContainer {
+    text-align: center;
+    min-height: 100vh;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 230px 0px 0px 100px;
+    margin: 0px 0px 0px 50px;
+}
+
+#initPage h1 {
     display: block;
     width: fit-content;
     font-size: 5rem;
@@ -60,103 +78,115 @@ nav.navbar{
     animation: text_reveal .5s ease forwards;
     animation-delay: 1.5s;
 }
-#initPage h1:nth-child(1){
+
+#initPage h1:nth-child(1) {
     animation-delay: .8s;
 }
-#initPage h1:nth-child(2){
+
+#initPage h1:nth-child(2) {
     animation-delay: 1.8s;
 }
-#initPage h1:nth-child(3){
+
+#initPage h1:nth-child(3) {
     animation: text_reveal_name .5s ease forwards;
     animation-delay: 2.8s;
 }
 
-.box{
-color: black;
-opacity: 70%;
-z-index: 1;
-}
-.initContainer .cta {
-    
-    display: inline-block;
-    border: 1px;
-    padding: 10px 30px;
-    color: gold;
-    border: 2px solid gold;
-    background-color: transparent;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    margin-top: 20px;
-    transition: .5s ease;
-    transition-property: background-color, color;
-
-}
-#initPage .cta:hover{
-    color: white;
-    font-weight: 500;
-    background-color: gold;
-}
-#initPage h1 span{
+#initPage h1 span {
     position: absolute;
     top: 0;
-    left:0;
+    left: 0;
     height: 100%;
     width: 0%;
     animation: text_reveal_box 1s ease;
     animation-delay: .5s;
     background-color: gold;
 }
-#initPage h1:nth-child(1) span{
+
+#initPage h1:nth-child(1) span {
     animation-delay: .5s;
 }
-#initPage h1:nth-child(2) span{
+
+#initPage h1:nth-child(2) span {
     animation-delay: 1.5s;
 }
-#initPage h1:nth-child(3) span{
+
+#initPage h1:nth-child(3) span {
     animation-delay: 2.5s;
 }
-#initPage::after{
+
+#initPage::after {
     content: '';
     position: absolute;
-    left:0;
+    left: 0;
     top: 0;
-    height:100%;
+    height: 100%;
     width: 100%;
     color: white;
-    background-color:black;
-    opacity: 0.5;
+    background-color: salmon;
+    opacity: 0.2;
     z-index: -1;
 }
- 
 
-img{
-    width: 300px ;
+
+img {
+    width: 300px;
 
 }
+
+/*Portifolio Button*/
+
+.initContainer .cta {
+
+
+    display: inline-block;
+    border: 1px;
+    padding: 10px 30px;
+    color: rgb(0, 81, 30);
+    border: 2px solid rgba(255, 0, 0, 0.489);
+    background-color: transparent;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 20px;
+    transition: .5s ease;
+    transition-property: background-color, color;
+}
+
+
+#initPage .cta:hover {
+    color: white;
+    font-weight:700;
+    background-color: rgb(0, 81, 30);
+}
+
+/*Projetos*/
 
 
 /*Keyframe*/
 
-@keyframes text_reveal{
-    100%{
-        color: white;
+@keyframes text_reveal {
+    100% {
+        color:  rgb(0, 81, 30) ;
     }
 }
-@keyframes text_reveal_name{
-    100%{
-        color: gold;
+
+@keyframes text_reveal_name {
+    100% {
+        color: rgb(122, 75, 0);
         font-weight: 500px;
     }
 }
 
-@keyframes text_reveal_box{
-    50%{
-        width:100%;
-        left:0;
+@keyframes text_reveal_box {
+    50% {
+        width: 100%;
+        left: 0;
     }
-    100%{
+
+    100% {
         width: 0;
-        left:100%
+        left: 100%
     }
 }
