@@ -36,8 +36,8 @@ html {
 
 nav.navbar {
     margin-top: 0px;
-    background-color: rgb(0, 81, 30);
-    color: #DCCBB5;
+    background-color: rgba(0, 81, 30, 0.598);
+    color: #7c4600;
     width: 100%;
     z-index: 1;
     position: fixed;
@@ -54,7 +54,8 @@ nav.navbar {
 }
 
 .navbar li a {
-    color: #DCCBB5;
+    color: #f2a78c;
+    font-weight: 700;
     text-decoration: none;
 }
 
@@ -168,36 +169,45 @@ nav.navbar {
 
 /*Presentation*/
 
-#present {
-    display: inline-block;
-    max-width: 100%;
-    background-color: #c9b0a3;
-    padding: 10px 0 0 10px;
-    width: auto;
-}
-
-#present h1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: large;
-
+#present .presentContainer {
+    background-color: #DCCBB5;
+    display: flex;
+    grid-column: 2;
 }
 
 #presentImg {
-    text-align: center;
-
+    display: flex;
 }
 
-.present-img img {
+.present-img img{
+    float: left;
     width: 300px;
-    padding-bottom: 30px;
-
-
+    height: auto;
 }
 
+.presentContent{
+    margin-left: 20px;
+    margin-top: 50px;
+    color: rgba(0, 81, 30, 0.598);
+    justify-content: center;
+}
+
+.presentContent h1{
+    font-size: 5rem;
+}
+.presentContent p{
+    font-size: 2em;
+}
+
+
+
+/*Portifolio title*/
 
 .section-title span {
-    border: solid #295600 5px;
+    padding: 2% 5%;
+    border: solid #2a560069 4px;
     background-color: #DCCBB5;
+    border-radius: 20%;
 }
 
 .section-title {
@@ -263,7 +273,7 @@ nav.navbar {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(60deg, rgba(255, 128, 0, 0.6) 0%, #f38f2b 100%);
+    background-image: linear-gradient(60deg, rgba(245, 173, 101, 0.6) 0%, #fca650c8 100%);
     color: white;
 }
 
@@ -321,16 +331,17 @@ form {
 #contact {
     text-align-last: center;
     display: inline-block font-size: large;
-    background-color: #c9b0a3;
+    background-color: #E2BCA8;
     padding: 80px;
     margin: 0;
 }
 
 .socialMedia {
     display: inline-block;
-    border: solid #da5400e4 3px;
+    border: solid #da54004c 3px;
     background-color: #DCCBB5;
     padding: 5%;
+    border-radius: 20%;
 }
 
 .socialMedia h1 {
@@ -350,9 +361,15 @@ form {
     font-size: small;
     margin: 0;
     text-align: center;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.715);
     color: white;
+    text-decoration: none;
+}
 
+.dev a {
+    color: white;
+    text-decoration: underline;
+    margin: 0;
 }
 
 
