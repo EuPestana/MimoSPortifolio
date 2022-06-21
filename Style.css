@@ -45,8 +45,8 @@ nav.navbar {
 
 
 .navbar li {
-    font-size: 18px;
-    margin-left: 50px;
+    font-size: 16px;
+    margin-left: 5%;
     display: inline-block;
     padding: 10px 100px 10px 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -110,7 +110,7 @@ nav.navbar {
     width: 0%;
     animation: text_reveal_box 1s ease;
     animation-delay: .5s;
-    background-color: gold;
+    background-color: #f2a78c;
 }
 
 #initPage h1:nth-child(1) span {
@@ -318,7 +318,7 @@ form {
     display: none;
 }
 
-.contact {
+#contact {
     text-align-last: center;
     display: inline-block font-size: large;
     background-color: #c9b0a3;
