@@ -8,6 +8,7 @@ html {
     font-size: 10px;
     scroll-behavior: smooth;
     font-family: 'Poppins', 'Times New Roman', Times, serif;
+    text-align: justify;
 }
 
 a {
@@ -16,7 +17,6 @@ a {
 
 p {
     font-size: 1.4rem;
-    margin-top: 5px;
     line-height: 2.5rem;
     font-weight: 200;
     letter-spacing: 0.05rem;
@@ -28,8 +28,6 @@ p {
     box-sizing: border-box;
 }
 
-
-
 .destaque {
     font-weight: bold;
 }
@@ -38,8 +36,9 @@ p {
 
 .navbar {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    margin: 0%;
+    justify-content: center;
+    flex-wrap: nowrap;
     margin-top: 0px;
     background-color: rgba(0, 81, 30, 0.598);
     color: #7c4600;
@@ -63,6 +62,11 @@ p {
 .navbar li a {
     color: #f2a78c;
     text-decoration: none;
+}
+
+.navbar li a:hover {
+    color: white;
+    font-weight: 700;
 }
 
 /* Seção de inicial */
@@ -90,6 +94,7 @@ p {
 
 #initPage h1 {
     display: inline-block;
+    text-align: left;
     width: fit-content;
     font-size: 5rem;
     position: relative;
@@ -184,6 +189,30 @@ p {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    align-content: stretch;
+    background-color: #C7AD9F;
+    width: auto;
+
+}
+
+.present-img {
+    size: 80%;
+    margin: 0%;
+    padding: 5vh;
+
+}
+
+.presentContent {
+    padding: 0vh 5vh 5vh 5vh;
+
+}
+
+.presentContent h1 {
+    font-size: 5rem;
+}
+
+.presentContent p {
+    font-size: 2rem;
 }
 
 
@@ -270,13 +299,17 @@ p {
 
 #portfolio .project-info h1 {
     font-size: 4rem;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 #portfolio .project-info h2 {
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 700;
     margin-top: 10px;
+}
+
+#portfolio .project-info p {
+    font-weight: 400;
 }
 
 #portfolio .project-img {
@@ -421,4 +454,12 @@ form {
         align-items: center;
 
     }
-}
+
+    .presentContent {
+        margin-right: 10%;
+    }
+
+    .present-img {
+        padding: 10vh;
+
+    }
