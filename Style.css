@@ -8,7 +8,6 @@ html {
     font-size: 10px;
     scroll-behavior: smooth;
     font-family: 'Poppins', 'Times New Roman', Times, serif;
-    text-align: justify;
 }
 
 a {
@@ -205,18 +204,19 @@ p {
 
 .presentContent {
     padding: 0vh 3vh 5vh;
+    text-align: justify;
 
 }
 
 .presentContent h1 {
-    font-size: 5rem;
+    font-size: 4rem;
+    color: rgb(0, 54, 0);
 }
 
 .presentContent p {
     font-size: 2rem;
+    color: rgb(0, 27, 0);
 }
-
-
 
 
 
@@ -296,6 +296,7 @@ p {
     flex-direction: column;
     background-image: linear-gradient(60deg, rgba(245, 173, 101, 0.6) 0%, #fca650c8 100%);
     color: white;
+    text-align: justify;
 }
 
 #portfolio .project-info h1 {
@@ -469,9 +470,9 @@ form {
 
 @media only screen and (max-width: 600px) {
     .navbar {
-   display: flex;
-   align-items: flex-start;
-   text-align: center;
+        display: flex;
+        align-items: flex-start;
+        text-align: center;
     }
 
 
